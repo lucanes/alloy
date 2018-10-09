@@ -1,7 +1,10 @@
 //- index.pug
 doctype html
-html
-  include head.pug
+- var title = "Alloy Networks"
+- var years = (() => { let date = new Date(); return `2005 - ${date.getFullYear()}`})()
+
+html(lang="en")
+  include index/head.pug
   body
-    include home.pug
-    include foot.pug
+    include index/home.pug
+    include index/foot.pug
